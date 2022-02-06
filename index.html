@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Deepak Gupta</title>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, minimum-scale=1"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/749416ed71.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="body-header">
+      <nav class="nav">
+        <div class="topnav">
+          <div class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </div>
+          
+          <div id="myLinks">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <div id="flat-list">
+          <div class="padding-t">
+            <ul class="horizontal-list text-center nav-menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              
+              <li><a href="#education">Education</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div id="resume-button">
+            <a
+              style="text-decoration: none"
+              target="_blank"
+              href="https://drive.google.com/file/d/1GgaggQ9LzIC-842RFD2aw23VQKDABC5V/view"
+              ><button class="btn-resume">Resume</button></a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- <home section start> -->
+      <div id="name-social-container">
+        <div id="name" class="text-center">
+          <h4>Deepak Gupta</h4>
+        </div>
+
+        <div id="social">
+          <ul class="horizontal-list-donthide text-center social-icons">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/deepak-kumar-gupta-a9b51a194/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/dpk968" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100007873665925" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fab fa-stack-overflow"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i class="fab fa-quora"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="about">
+        <div id="profile-photo">
+          <img src="pics/profile-photo.jpg" />
+        </div>
+        <p data-aos="fade-up">
+          I am a Full Stack developer currently pursuing my B.Tech Fourth year in
+          Computer Science & Engineering from B.S.A. College Of Engineering & Technology. To pursue
+          my career with dedicated approach and full commitment, to explore and enhance my potential in the
+          field of Software Engineer to make effective use of the skills to contribute significantly in the success of
+          the organization and get the best out of myself.
+        </p>
+      </section>
+
+      <section id="skills">
+        <h1 class="section-heading">
+          <span id="skill-icon"><i class="fas fa-fire-alt"></i></span>
+          <span>SKILLS</span>
+        </h1>
+
+        <div class="common-display" id="skill-container">
+          <div class="skills-progress">
+            <div class="seventy-five skill-border blue" data-value="85">
+              <div class="skill-name">
+                <span>Java</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-progress">
+            <div class="eighty skill-border black" data-value="80">
+              <div class="skill-name">
+                <span>HTML</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-progress">
+            <div class="seventy-five skill-border red" data-value="75">
+              <div class="skill-name">
+                <span>CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-progress">
+            <div class="seventy-five skill-border green" data-value="75">
+              <div class="skill-name">
+                <span>JAVASCRIPT</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-progress">
+            <div class="seventy-five skill-border orange" data-value="95">
+              <div class="skill-name">
+                <span>PHP</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-progress">
+            <div class="seventy-five skill-border magenta" data-value="90">
+              <div class="skill-name">
+                <span>MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section id="experience">
+        <h1 class="section-heading">
+          <span id="skill-icon"><i class="fas fa-user-secret"></i></span>
+          <span>Android Projects</span>
+        </h1>
+
+        <div class="timeline">
+          <div class="timeline-box">
+            <div class="timeline-container">
+              <div class="timeline-logo">
+                <img src="pics/burpp.png" style="width: 100%" />
+              </div>
+              <h3 class="right-align work-designation">Frontend developer</h3>
+              <h4 class="right-align work-name">Burpp</h4>
+              <h5 class="right-align work-time">March 2021 - May 2021</h5>
+
+              <p class="justify-align work-description">
+                Built high intensity features for their website using ReactJs
+                and Redux. Worked on designing of various pages using bootstrap.
+                Integrated Razorpay gateway for payments also worked on google
+                authentication for users.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-box">
+            <div class="timeline-container">
+              <div class="timeline-logo">
+                <img src="pics/ninja_newlogo.png" />
+              </div>
+              <h3 class="right-align work-designation">
+                Teaching Assistant Intern
+              </h3>
+              <h4 class="right-align work-name">Coding Ninjas</h4>
+              <h5 class="right-align work-time">August 2020 - December 2020</h5>
+
+              <p class="justify-align work-description">
+                Did my Internship as a Ds/Algo(c++) teaching assistant at Coding
+                Ninjas India. The task was to solve doubts of students related
+                to Data structures and Algorithms and mentor 20 students
+                throughout their duration.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-box">
+            <div class="timeline-container">
+              <div class="timeline-logo">
+                <img src="pics/ieee.png" />
+              </div>
+              <h3 class="right-align work-designation">
+                Technical Coordinator
+              </h3>
+              <h4 class="right-align work-name">IEEE MAIT</h4>
+              <h5 class="right-align work-time">May 2020 - Dec 2021</h5>
+
+              <p class="justify-align work-description">
+                Working as a Technical Coordinator at IEEE MAIT. Duty is to
+                organize and manage different technical workshops for fresher
+                students to give them insights into new technology and
+                conducting SIG’s for freshers to giving them hand’s on a session
+                during workshops
+              </p>
+            </div>
+          </div>
+          <div class="timeline-divider">
+            <div class="timeline-traveller">
+              <i class="fas fa-rocket"></i>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section id="education">
+        <h1 class="section-heading">
+          <span id="skill-icon"><i class="fas fa-graduation-cap"></i></span>
+          <span>EDUCATION</span>
+        </h1>
+
+        <div class="timeline">
+          <div class="timeline-box">
+            <div class="timeline-container">
+              <div class="timeline-logo">
+                <img src="pics/clgLogo.png" />
+              </div>
+              <h3 class="right-align work-designation">
+                B.S.A. College Of Engineering & Technology,Mathura
+              </h3>
+              <h4 class="right-align work-name">Btech(CSE)</h4>
+              <h5 class="right-align work-time">August 2018 - August 2022</h5>
+
+              <p class="justify-align work-description">
+                I am currently pursuing my underGraduation from B.S.A. College Of Engineering & Technology
+                in Computer Science and Engineering
+                My average current CGPA is 8.7.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-box">
+            <div class="timeline-container">
+              <div class="cbse-logo">
+                <img src="pics/cbseLogo.png" />
+              </div>
+              <h3 class="right-align work-designation">CBSE</h3>
+              <h4 class="right-align work-name">Class XII</h4>
+              <h5 class="right-align work-time">2016 - 2018</h5>
+
+              <p class="justify-align work-description">
+                I completed my class 12 from CBSE board in 2018 from Saraswati Vidhya Mandir Chhata I secured 82% marks in Science Stream.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-box">
+            <div class="timeline-container">
+              <div class="cbse-logo">
+                <img src="pics/cbseLogo.png" />
+              </div>
+              <h3 class="right-align work-designation">CBSE</h3>
+              <h4 class="right-align work-name">Class X</h4>
+              <h5 class="right-align work-time">2014 - 2016</h5>
+
+              <p class="justify-align work-description">
+                I completed My class 10 in 2016 from CBSE board and secured 8.8
+                Cgpa .
+              </p>
+            </div>
+          </div>
+          <div class="timeline-divider-2">
+            <div class="timeline-traveller-education">
+              <i class="fas fa-meteor"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <h1 class="section-heading">
+          <span id="skill-icon"><i class="fas fa-portrait"></i></span>
+          <span>PROJECTS</span>
+        </h1>
+        <div class="common-display">
+          <div class="flip-card margin-flip">
+            <div class="flip-card-inner">
+              <div class="flip-card-front" style="width: 300px; height: 200px">
+                <img
+                  src="./pics/weatherForecast.png"
+                  alt="Avatar"
+                  style="width: 100%; height: 100%"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Weather Forecast App</h1>
+                <h3>Android Project</h3>
+                <p style="font-size: smaller; padding: 8px">
+                  Automatically fetch current location of the user 
+                  Display weather according to that location 
+                  Background image change according to day and night
+                  All weather forecast information display in recycler view.
+                </p>
+                <div>
+                  <a
+                    style="text-decoration: none"
+                    target="_blank"
+                    href="https://drive.google.com/file/d/1C9sYp68vwrCH_-LsGhamWUj_1WqW1X0N/view?usp=drivesdk"
+                    ><button class="btn-project">Download apk</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card margin-flip">
+            <div class="flip-card-inner">
+              <div class="flip-card-front" style="width: 300px; height: 200px">
+                <img
+                  src="./pics/covid.png"
+                  alt="Avatar"
+                  style="width: 100%; height: 100%"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Covid Tracker App</h1>
+                <h3>Android Project</h3>
+                <p style="font-size: smaller; padding: 8px">
+                  Automatically fetch total covid cases of all over the world
+                  Display total cases in India till now
+                  Display state wise cases in recycler view.
+                </p>
+                <div>
+                  <a
+                    style="text-decoration: none"
+                    target="_blank"
+                    href="https://drive.google.com/file/d/1Bzv1wodLGhlaqQlcdzXkUt4wNfoovo-p/view?usp=drivesdk"
+                    ><button class="btn-project">Download apk</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card margin-flip">
+            <div class="flip-card-inner">
+              <div class="flip-card-front" style="width: 300px; height: 200px">
+                <img
+                  src="./pics/d2waits.png"
+                  alt="Avatar"
+                  style="width: 100%; height: 100%"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>D2waits</h1>
+                <h3>Android Project</h3>
+                <p style="font-size: smaller; padding: 8px">
+                  Designed and Implemented Android App in Kotlin For Student can ask query And
+                  help other students in study by interacting seniors or by Teachers.
+                </p>
+                <div>
+                  <a
+                    style="text-decoration: none"
+                    target="_blank"
+                    href="https://drive.google.com/file/d/1C30JKVW5IO6P8mZ0Pq2AgjdnGUakKfm0/view?usp=drivesdk"
+                    ><button class="btn-project">Download apk</button></a
+                  >
+                </div>
+                
+              </div>
+            </div>
+          </div>
+         
+          <div class="flip-card margin-flip">
+            <div class="flip-card-inner">
+              <div class="flip-card-front" style="width: 300px; height: 200px">
+                <img
+                  src="./pics/Grivence.png"
+                  alt="Avatar"
+                  style="width: 100%; height: 100%"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Grivence System</h1>
+                <h3>Live Web Project</h3>
+                <p style="font-size: smaller; padding: 8px">
+                  I Make A Grievance 
+                  Redreassal System For My College.In This System 
+                  Or Website Student Post Their Grivences.
+                </p>
+                <div>
+                  <a
+                    style="text-decoration: none"
+                    target="_blank"
+                    href="http://103.129.195.122:8085/project/"
+                    ><button class="btn-project">Website</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card margin-flip">
+            <div class="flip-card-inner">
+              <div class="flip-card-front" style="width: 300px; height: 200px">
+                <img
+                  src="./pics/Charity.png"
+                  alt="Avatar"
+                  style="width: 100%; height: 100%"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Charity Website</h1>
+                <h3>Live Web Project</h3>
+                <p style="font-size: smaller; padding: 8px">
+                  I Make A Charity Website For Mr.SATISH SHARMA For 
+                  Their NGO Name Justice For Children And Women Society 
+                  (JCWS) Established In Year 2009.
+                </p>
+                <div>
+                  <a
+                    style="text-decoration: none"
+                    target="_blank"
+                    href="#"
+                    ><button class="btn-project">Website</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h1 class="contact-heading">
+          <span id="skill-icon"><i class="fas fa-id-card"></i></span>
+          <span>CONTACT</span>
+        </h1>
+
+        <div class="contact-display">
+          <div class="form">
+            <form>
+              <div class="input-div">
+                <input type="text" name="name" id="person-name" required />
+                <label for="person-name">Name</label>
+              </div>
+              <div class="input-div">
+                <input type="text" name="subject" id="person-email" required />
+                <label for="person-email">Subject</label>
+              </div>
+              <div class="input-div">
+                <textarea
+                  name="message"
+                  id="person-message"
+                  rows="2"
+                  cols="18"
+                  required
+                ></textarea>
+                <label for="person-message">Message</label>
+              </div>
+
+              <button type="submit" id="button">Send Message</button>
+            </form>
+          </div>
+          <div class="form">
+            <div id="get-in-touch">
+              <h1>Get in touch</h1>
+              <p>
+                I am presently looking for internships in web development field
+                any opprtunity given in this field will be highly appreciated.
+              </p>
+            </div>
+            <div id="my-address">
+              <h1>My Address</h1>
+              <div class="small-icons">
+                <span><i class="fas fa-map-marker-alt"></i></span>
+                <span>Mathura,India</span>
+              </div>
+              <div class="small-icons">
+                <span><i class="fas fa-mobile-alt"></i></span>
+                <span>7618500170</span>
+              </div>
+              <div class="small-icons">
+                <span><i class="far fa-envelope"></i></span>
+                <span>deepakkumarg968@gmail.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="form">
+            <ul class="horizontal-list text-center social-icons">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/deepak-kumar-gupta-a9b51a194/"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://github.com/dpk968" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=100007873665925" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fab fa-stack-overflow"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <i class="fab fa-quora"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 160, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1500,
+        once: true,
+      });
+    </script>
+  </body>
+</html>

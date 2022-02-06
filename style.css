@@ -1,0 +1,873 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+input,
+textarea {
+  border: none;
+  color: white;
+}
+
+textarea,
+input:focus {
+  /* Removing outlines from all input tags*/
+  outline: none;
+}
+label {
+  transition: 0.2s;
+  color: white;
+}
+
+form > div {
+  position: relative;
+}
+
+form > div > label {
+  position: absolute;
+  left: 30px;
+  top: 0px;
+}
+.input-div input:focus + label {
+  top: -20px;
+  color: #74adc8;
+}
+
+.input-div input:valid + label {
+  top: -20px;
+  color: #74adc8;
+}
+
+textarea:focus + label,
+textarea:valid + label {
+  top: -20px;
+  color: #74adc8;
+}
+
+.input-div {
+  margin-top: 30px;
+}
+
+#body-header {
+  background-image: url(pics/background5.jpg);
+  height: 65vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 1.2rem;
+}
+
+/* flip------------------------------------ */
+
+.margin-flip {
+  margin: 20px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 240px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-back h1 {
+  margin: 10px 0px;
+  border-bottom: 2px solid white;
+}
+
+.flip-card-back h3 {
+  margin: 0px;
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  box-shadow: 4px 6px 9px 2px #888888;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #6488ea;
+  color: white;
+  transform: rotateY(180deg);
+}
+/*------------section----------------*/
+section {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+}
+.section-heading {
+  width: auto;
+  padding: 6px 49px;
+  font-weight: 500;
+}
+
+.section-heading span {
+  font-size: 40px;
+  color: #2857a4;
+  display: inline-block;
+  padding-top: 10px;
+  margin-right: 0.5rem;
+}
+
+section:nth-child(2n) {
+  background-color: #e7eaf4;
+  padding: 10px 0px;
+}
+
+section:nth-child(2n + 1) {
+  background-color: #eff0f4;
+  padding: 10px 0px;
+}
+
+.common-display {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: space-around;
+}
+
+/*-----------------------------------------------------------nav class-------------------------*/
+
+.nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 36px;
+  opacity: 0.7;
+  padding-top: 12px;
+  z-index: 6;
+}
+
+#flat-list {
+  margin: auto;
+  position: relative;
+}
+
+.padding-t {
+  padding-top: 3px;
+}
+
+#resume-button {
+  position: absolute;
+  top: -5px;
+  right: 2%;
+}
+
+.btn-resume {
+  /* padding: 14px 28px; */
+  font-size: 16px;
+  cursor: pointer;
+  padding: 7px 12px;
+  border-radius: 22px;
+  background: transparent;
+
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-resume:hover {
+  background: white;
+  color: black;
+}
+
+/* resume btn */
+
+.btn-project {
+  /* padding: 14px 28px; */
+  font-size: 16px;
+  cursor: pointer;
+  padding: 7px 12px;
+  border-radius: 22px;
+  background: transparent;
+
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-project:hover {
+  background: white;
+  color: black;
+}
+
+.nav-colored {
+  background-color: black;
+}
+
+.nav-transparent {
+  background-color: transparent;
+}
+
+/*------------horizontal list--------*/
+
+.horizontal-list {
+  padding: 0px;
+  list-style: none;
+  margin: 0px;
+}
+.horizontal-list li {
+  display: inline;
+  margin: 0px 25px 25px 0px;
+}
+.horizontal-list li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.nav-menu {
+  transition: border-bottom 4s;
+}
+.nav-menu li a:hover {
+  color: lightgrey;
+  border-bottom: 1px solid white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*----------------------------------------hamburger menu---------------------------------------------------------------------*/
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333; /* again commiting */
+  position: relative;
+  display: none;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  width: 0%;
+  position: fixed;
+  top: 47px;
+  left: 0px;
+  /* decreasing the width */
+  background-color: rgba(48, 48, 48, 0.945);
+  z-index: 5;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  height: 100vh;
+}
+
+.icon {
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 30px;
+  position: fixed;
+  top: 12px;
+  left: 10px;
+  width: 100%;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a .icon {
+  background: white;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+/*---------------Name-----------*/
+#name-social-container {
+  margin-top: 20vh;
+}
+
+#name {
+  font-size: 50px;
+  color: white;
+  transition: color 0.5s;
+  /*margin: 0px 476px;*/
+}
+
+#name h4:hover {
+  color: lightgrey;
+  /*border-bottom: 1px solid white;*/
+}
+
+/*--------------------Social icons-----------*/
+
+#social {
+  margin-top: -63px;
+}
+
+.social-icons li a i {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 50%;
+}
+
+.social-icons li a i:hover {
+  box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+.horizontal-list-donthide {
+  padding: 0px;
+  list-style: none;
+  margin: 0px;
+}
+.horizontal-list-donthide li {
+  display: inline;
+  margin: 0px 25px 25px 0px;
+}
+.horizontal-list-donthide li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+/*-----------------------------about----------*/
+
+#about {
+  height: 260px;
+  width: 100%;
+}
+
+#profile-photo {
+  height: 12rem;
+  width: 12rem;
+  margin: auto;
+  margin-top: -107px;
+}
+
+#profile-photo img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #79a3e3a6;
+  box-shadow: 0 0 8px 2px white;
+}
+
+#about p {
+  text-align: center;
+  color: grey;
+  margin: 2% 20%;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/*-----------------Skills----------------*/
+
+.skills-progress {
+  background-color: lightgrey;
+  border-radius: 0.8rem;
+  width: 7rem;
+  height: 1.4rem;
+  margin: 20px;
+  box-shadow: 0px 0px 7px 3px #888888;
+}
+
+.seventy-five {
+  width: 75%;
+}
+.skill-name {
+  color: white;
+  height: inherit;
+  width: inherit;
+  padding: 3px 14px;
+}
+
+.skill-border {
+  height: inherit;
+  border-bottom-left-radius: 0.8rem;
+  border-top-left-radius: 0.8rem;
+  box-shadow: 0px 0px 7px 3px #888888;
+}
+
+.eighty {
+  width: 80%;
+}
+.forty-five {
+  width: 45%;
+}
+
+.blue {
+  background-color: #2857a4;
+}
+
+.black {
+  background-color: black;
+}
+
+.red {
+  background-color: #e12828;
+}
+.green {
+  background-color: #1f6c1f;
+}
+.yellow {
+  background-color: #d1d11f;
+}
+.orange {
+  background-color: #df9a1b;
+}
+.magenta {
+  background-color: #a729a7;
+}
+
+.skyblue {
+  background-color: #419da9;
+}
+
+/*----------------------------------------portfolio---------------------------*/
+
+.project {
+  width: 360px;
+  height: 210px;
+  overflow: hidden;
+  margin: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 35px;
+}
+
+.project img {
+  /* height: 165px; */
+  height: 100%;
+  width: 100%;
+}
+
+.profile-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-out;
+}
+.profile-details p {
+  font-family: monospace;
+  font-size: medium;
+}
+
+.project:hover {
+  box-shadow: 0 0 20px #74adc8;
+}
+
+.project:hover .profile-details {
+  background-color: #0c0b0b78;
+  color: white;
+  text-align: center;
+  padding-top: 32px;
+  font-size: larger;
+  height: 100%;
+  width: 100%;
+  top: -10px;
+  left: 0;
+}
+
+.project:hover .blurred {
+  filter: blur(3px);
+}
+
+/* #length-increase{
+	height: 150px;
+} */
+
+.project-info a {
+  text-decoration: none;
+  color: white;
+}
+/*----------------------------------Contact--------------------------------------*/
+
+#contact {
+  background: linear-gradient(to top right, #403066, #2857a4);
+  /* height: 800px; */
+}
+
+.contact-heading {
+  width: auto;
+  padding: 6px 49px;
+  font-weight: 500;
+}
+
+.contact-heading span {
+  font-size: 40px;
+  color: white;
+  display: inline-block;
+  padding-top: 10px;
+  margin-right: 0.5rem;
+}
+
+.contact-display {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.form {
+  width: 42%;
+  margin: 20px;
+  height: auto;
+  text-align: center;
+}
+
+.form input {
+  display: block;
+  margin: 17px auto;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  width: 90%;
+}
+
+.form textarea {
+  margin: 17px auto;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  width: 90%;
+}
+
+#button {
+  border: 1px solid white;
+  width: 106px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  padding: 7px;
+  height: auto;
+  background: transparent;
+  color: white;
+}
+
+#get-in-touch {
+  text-align: left;
+}
+
+#get-in-touch h1,
+p {
+  color: white;
+}
+
+#get-in-touch h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#get-in-touch p {
+  /* font-size: smaller; */
+  text-align: justify;
+}
+
+#my-address h1 {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  color: white;
+}
+
+.small-icons {
+  text-align: left;
+  height: auto;
+  width: 198px;
+  margin: 5px;
+  color: white;
+  font-weight: 100;
+  /* font-size: small; */
+}
+
+/*------------------Experience-----------------*/
+
+.timeline {
+  position: relative;
+  width: 75%;
+  height: auto;
+}
+
+.timeline-box {
+  position: relative;
+  margin: 5px;
+  width: 40%;
+  left: 5%;
+  min-height: 150px;
+}
+.timeline-box::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: lightgrey;
+  top: 25%;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-box:nth-child(2n)::after {
+  left: -9.5%;
+}
+.timeline-box:nth-child(2n + 1)::after {
+  right: -13.9%;
+  top: 30%;
+}
+
+.timeline-box:nth-child(2n) {
+  left: 53%;
+}
+
+.timeline-divider {
+  position: absolute;
+  height: 65%;
+  width: 0;
+  border: 3px dashed lightblue;
+  top: 10%;
+  left: 50%;
+}
+
+.timeline-divider-2 {
+  position: absolute;
+  height: 67%;
+  width: 0;
+  border: 3px dashed lightblue;
+  top: 14%;
+  left: 50%;
+}
+
+.timeline-traveller {
+  position: sticky;
+  top: 20%;
+  transform: rotate(134deg);
+  font-size: x-large;
+  color: blue;
+  /* padding: 8px; */
+  margin-top: -8px;
+  margin-bottom: 16px;
+  margin-left: 8px;
+  z-index: 2;
+}
+
+.timeline-traveller-education {
+  position: sticky;
+  top: 20%;
+  transform: rotate(-48deg);
+  font-size: x-large;
+  color: blue;
+  /* padding: 8px; */
+  margin-top: -20px;
+  margin-bottom: 11px;
+  margin-left: -8px;
+  z-index: 2;
+}
+
+/*-------------------------data-innside-experience---------------------------------------------*/
+
+.timeline-container {
+  padding: 24px;
+  box-shadow: 2px 2px 3px #888888, -2px -2px 3px 1px white;
+  border-radius: 14px;
+}
+
+.timeline-logo {
+  position: absolute;
+  width: 66px;
+  overflow: hidden;
+}
+
+.cbse-logo {
+  position: absolute;
+  width: 71px;
+  overflow: hidden;
+}
+.cbse-logo img {
+  width: 100%;
+}
+
+.timeline-logo img {
+  width: 65%;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.justify-align {
+  text-align: justify;
+}
+
+.work-description {
+  color: #7e7878;
+}
+
+.work-designation {
+  font-size: x-large;
+  color: #6d6dcc;
+  padding-top: 23px;
+  word-break: break-word;
+}
+.work-name {
+  margin-bottom: -19px;
+  color: #f7b234;
+}
+.work-time {
+  color: darkgray;
+}
+
+/* ------------------------------------------------------Media queries------------------------------------------------------------------ */
+
+@media screen and (max-width: 1290px) {
+  #about {
+    height: auto;
+  }
+
+  .timeline-box:nth-child(2n)::after {
+    left: -10.1%;
+  }
+
+  .timeline-box:nth-child(2n + 1)::after {
+    right: -14.3%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .btn {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline-divider {
+    left: 8%;
+  }
+
+  .timeline-divider-2 {
+    left: 8%;
+  }
+
+  .timeline-box {
+    width: 80%;
+    left: 12% !important;
+    padding: 10px 0px;
+  }
+
+  .timeline-box::after {
+    left: -8.5% !important;
+    top: 33%;
+  }
+  html {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 572px) {
+  .topnav {
+    display: block;
+  }
+
+  .common-display {
+    width: 100%;
+  }
+
+  .horizontal-list {
+    display: none;
+  }
+  #about p {
+    margin: 6% 12%;
+    text-align: justify;
+  }
+  .form {
+    width: 70%;
+  }
+
+  #get-in-touch h1 {
+    text-align: center;
+  }
+
+  #my-address h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #name-social-container {
+    margin-top: -14px;
+  }
+
+  #name {
+    font-size: 39px;
+    padding-bottom: 9px;
+  }
+
+  .timeline-box::after {
+    left: -10% !important;
+    top: 33%;
+  }
+
+  .timeline {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .timeline-box::after {
+    left: -9% !important;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .margin-flip {
+    margin: 10px 0px;
+  }
+  .section-heading {
+    padding: 6px 27px;
+  }
+}
