@@ -152,7 +152,7 @@
           </div>
 
           <div class="skills-progress">
-            <div class="seventy-five skill-border orange" data-value="95">
+            <div class="seventy-five skill-border orange" data-value="85">
               <div class="skill-name">
                 <span>PHP</span>
               </div>
@@ -160,12 +160,33 @@
           </div>
 
           <div class="skills-progress">
-            <div class="seventy-five skill-border magenta" data-value="90">
+            <div class="seventy-five skill-border skyblue" data-value="90">
               <div class="skill-name">
                 <span>MySQL</span>
               </div>
             </div>
           </div>
+
+          <div class="skills-progress">
+            <div class="seventy-five skill-border winePink" data-value="70">
+              <div class="skill-name">
+                <span>Kotlin</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-progress">
+            <div class="seventy-five skill-border cyan" data-value="80">
+              <div class="skill-name">
+                <span>Android</span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
         </div>
       </section>
 
@@ -463,7 +484,7 @@
 
         <div class="contact-display">
           <div class="form">
-            <form>
+            <form onsubmit="mailMe(); reset(); return false;">
               <div class="input-div">
                 <input type="text" name="name" id="person-name" required />
                 <label for="person-name">Name</label>
@@ -550,6 +571,8 @@
       </section>
     </main>
 
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

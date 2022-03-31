@@ -442,27 +442,35 @@ section:nth-child(2n + 1) {
 }
 
 .black {
-  background-color: black;
+  background-color: #2c3e50;
 }
 
 .red {
-  background-color: #e12828;
+  background-color: #e74c3c;
 }
 .green {
-  background-color: #1f6c1f;
+  background-color: #36827f;
 }
 .yellow {
-  background-color: #d1d11f;
+  background-color: #d35400;
 }
 .orange {
-  background-color: #df9a1b;
+  background-color: indigo;
 }
 .magenta {
   background-color: #a729a7;
 }
 
 .skyblue {
-  background-color: #419da9;
+  background-color: #f9db60;
+}
+
+.winePink {
+  background-color: #ff006a;
+}
+
+.cyan {
+  background-color: seagreen;
 }
 
 /*----------------------------------------portfolio---------------------------*/
